@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../jquery-1.12.1.min.js"></script>
+  
+  <style>
+    .map {
+      width: 800px;
+      height: 600px;
+      background-color: #ccc;
+      position: relative;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="map"></div>
+  <script src="./food.js"></script>
+  <script src="./snake.js"></script>
+  <script src="./game.js"></script>
+  <script>
+    
+
+    var gm = new Game(document.querySelector(".map"));
+
+    //初始化游戏---开始游戏
+    gm.init();
+
+
+    // 测试代码 写多了以后封装成游戏构造函数
+    // var fd = new Food()
+    // fd.init(document.querySelector(".map"))
+
+    // var snake = new Snake()
+    // snake.init(document.querySelector(".map"))
+    // setInterval(function () {
+    //   snake.move(fd, document.querySelector(".map"))
+    //   snake.init(document.querySelector(".map"))
+    // }, 150)
+</script>
+</body>
+
+</html>
